@@ -79,7 +79,7 @@ int main(){
     }
 
     char key[50];
-    cout<<endl<<"  Type Your key:-\t(key's length must be 1-4)"<<endl<<"  --> ";
+    cout<<endl<<"  Type Your key:-\t(key's length must be 1-4 & integer only)"<<endl<<"  --> ";
     cin>>key;
 
     switch (input)
