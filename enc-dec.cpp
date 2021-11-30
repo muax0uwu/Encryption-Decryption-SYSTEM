@@ -64,8 +64,15 @@ int main(){
 
     int input;
     cin>>input;
-    getchar();
     cout<<endl<<endl;
+
+    if (input != 1 && input != 0){
+        cout<<endl<<"\t\t*** INVALID INPUT ***"<<endl;
+        cout<<"\t\t\tTRY AGAIN"<<endl;
+        sleep(1);
+        main();
+    }
+    getchar();
 
     string str;
     cout<<"Type your string"<<endl<<endl<<"  --> ";
@@ -79,7 +86,7 @@ int main(){
     }
 
     char key[50];
-    cout<<endl<<"  Type Your key:-\t(key's length must be 1-4 & integer only)"<<endl<<"  --> ";
+    cout<<endl<<"  Type Your key:-\t(If any problem with enc/dec change the key)"<<endl<<"  --> ";
     cin>>key;
 
     switch (input)
@@ -98,19 +105,12 @@ int main(){
         cout<<endl<<"  Your KEY                : "<<key;
         ex();
     default:
-        try_again();
         break;
     }
     cout<<endl;
     return 0;
 }
 
-void try_again(){
-    cout<<endl<<"\t\t*** INVALID INPUT ***"<<endl;
-    cout<<"\t\tTRY AGAIN"<<endl;
-    sleep(1);
-    main();
-}
 
 void ex(){
     cout<<endl<<endl<<"\t\t -----| PRESS 0 TO EXIT OR 1 To Continue |----"<<endl<<endl<<"\t\t >>>>>  ";
