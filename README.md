@@ -1,3 +1,5 @@
 # Encryption-Decryption-SYSTEM
 
-#This will work in linux filesystem only :')
+#The executable file will work in linux only :')
+
+#For windows or something you have to compile the cpp file :')
